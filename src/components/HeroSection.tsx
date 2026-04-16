@@ -15,10 +15,10 @@ export default function HeroSection() {
           className="w-full md:w-[45%] flex justify-center"
         >
           <div className="relative w-full max-w-sm lg:max-w-md aspect-[4/5] rounded-[2rem] overflow-hidden glass-card p-2 shadow-xl">
-             <Image 
-               src="/cool_nerd_portrait.png" 
-               alt="Cool Developer Portrait" 
-               fill 
+             <Image
+               src="https://images.unsplash.com/photo-1607705703571-c5a8695f18f6?w=800&q=90"
+               alt="Developer Portrait"
+               fill
                className="object-cover rounded-[1.5rem]"
                priority
              />

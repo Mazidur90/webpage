@@ -7,7 +7,7 @@ export default function AboutPage() {
     <div className="w-full flex flex-col pt-32 pb-16 px-8 min-h-[calc(100vh-80px)] max-w-6xl mx-auto">
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="flex flex-col md:flex-row items-center gap-16">
         <div className="w-full md:w-1/2 relative aspect-square max-w-md rounded-full overflow-hidden border-8 border-foreground/10 shadow-2xl">
-          <Image src="/hero_portrait.png" alt="About Me" fill className="object-cover" />
+          <Image src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=90" alt="About Me" fill className="object-cover" />
         </div>
         <div className="w-full md:w-1/2 flex flex-col gap-6">
           <h1 className="text-4xl md:text-5xl font-extrabold">About Me</h1>

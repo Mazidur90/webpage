@@ -5,7 +5,17 @@ const nextConfig: NextConfig = {
   basePath: "/webpage",
   assetPrefix: "/webpage",
   images: {
-    unoptimized: true, // Required for next/image on GitHub Pages/Static Exports
+    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+      {
+        protocol: "https",
+        hostname: "plus.unsplash.com",
+      },
+    ],
   },
 };
 
