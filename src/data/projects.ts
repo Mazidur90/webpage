@@ -278,5 +278,138 @@ WHAT IT DOES:
 • Dispatches multi-threaded tasks handling heavy C# pipeline logic completely to discrete graphical memory arrays instantly.
 • Accomplishes enormous data sorting and validation filters entirely in fractions of legacy architectural time limits significantly.`,
     applications: ["Enterprise Infrastructure", "Data Acceleration", "High-Performance Computing"]
+  },
+  {
+    id: "13",
+    title: "Kubernetes Infrastructure Automation",
+    slug: "kubernetes-automation",
+    category: "Cyber Physical Systems",
+    description: "Shell-based Kubernetes cluster automation scripts for container orchestration, deployment pipelines, and infrastructure management.",
+    tags: ["Kubernetes", "Shell", "DevOps", "Containers"],
+    image: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=800&q=80",
+    githubUrl: "https://github.com/Mazidur90/Kubernatics",
+    details: `PROBLEM STATEMENT:
+• Manual Kubernetes cluster management is error-prone and doesn't scale across multi-node production deployments.
+
+WHERE IT IS USED:
+• Cloud-native production environments running containerized microservices.
+• DevOps pipelines requiring automated cluster provisioning and rollback.
+
+WHAT IT DOES:
+• Automates Kubernetes cluster setup, pod scheduling, and service mesh configuration via shell scripts.
+• Manages deployment rollouts, scaling policies, and namespace isolation for multi-tenant workloads.
+• Integrates health checks and automated recovery procedures to maintain cluster uptime.`,
+    applications: ["Cloud Infrastructure", "Container Orchestration", "CI/CD Pipelines"]
+  },
+  {
+    id: "14",
+    title: "Battery Management System Simulation",
+    slug: "battery-management-system",
+    category: "Embedded Systems Development",
+    description: "MATLAB and Simulink Battery Management System with protection logic, SOC/SOH/SOP estimation, thermal supervision, and Modbus models for lithium-ion cells.",
+    tags: ["MATLAB", "Simulink", "Embedded Systems", "Energy"],
+    image: "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=800&q=80",
+    githubUrl: "https://github.com/Mazidur90/Battery-managment-System-Simulation-eith-discharge-state-and-modbus-Modesl-___MATALB",
+    details: `PROBLEM STATEMENT:
+• Lithium-ion battery systems require precise state estimation and protection logic to prevent thermal runaway and premature degradation.
+
+WHERE IT IS USED:
+• Electric vehicle battery packs requiring real-time SOC/SOH monitoring.
+• Industrial energy storage systems with Modbus communication interfaces.
+
+WHAT IT DOES:
+• Implements full BMS logic in MATLAB/Simulink including State of Charge (SOC), State of Health (SOH), and State of Power (SOP) estimation algorithms.
+• Simulates discharge curves and thermal behaviour under varying load conditions.
+• Generates Modbus-compatible system-level models for integration with industrial PLCs and SCADA systems.
+• Applies protection logic for over-voltage, under-voltage, over-temperature, and short-circuit conditions.`,
+    applications: ["Electric Vehicles", "Industrial Energy Storage", "Battery Research"]
+  },
+  {
+    id: "15",
+    title: "Sensor Testing Digital Twin",
+    slug: "sensor-digital-twin",
+    category: "Cyber Physical Systems",
+    description: "Scilab-based digital twin framework for testing and validating physical sensor behaviour in a virtual environment before hardware deployment.",
+    tags: ["Scilab", "Digital Twin", "Simulation", "Sensors"],
+    image: "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=800&q=80",
+    githubUrl: "https://github.com/Mazidur90/Sensor_Testing_Digital_twin",
+    details: `PROBLEM STATEMENT:
+• Physical sensor validation on real hardware is costly and slow — faults discovered late in deployment cause expensive redesigns.
+
+WHERE IT IS USED:
+• Pre-deployment validation of industrial IoT sensor arrays.
+• Research environments simulating sensor fusion before physical prototype construction.
+
+WHAT IT DOES:
+• Creates a virtual replica of physical sensor systems in Scilab, mirroring real-world signal characteristics and noise profiles.
+• Runs exhaustive fault injection and boundary condition tests without risking physical hardware.
+• Validates sensor calibration algorithms and data pipelines against simulated ground truth values.`,
+    applications: ["Industrial IoT Validation", "Sensor Fusion Research", "Embedded Prototyping"]
+  },
+  {
+    id: "16",
+    title: "Fault Detection via Image Technique",
+    slug: "fault-detection-image",
+    category: "AI and Software Automation",
+    description: "Python-based visual fault detection system using image processing techniques to identify defects in physical components.",
+    tags: ["Python", "Computer Vision", "Fault Detection", "Inspection"],
+    image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=80",
+    githubUrl: "https://github.com/Mazidur90/fault_detection_image-_technique",
+    details: `PROBLEM STATEMENT:
+• Manual visual inspection of manufactured parts misses micro-defects and is inconsistent across operators and shifts.
+
+WHERE IT IS USED:
+• Quality control stations on manufacturing production lines.
+• Automated inspection systems for precision-machined components.
+
+WHAT IT DOES:
+• Applies image processing and computer vision algorithms to identify surface defects, cracks, and dimensional anomalies.
+• Processes raw camera feeds in real-time and flags non-conforming parts with bounding box annotations.
+• Generates inspection reports with defect classification and confidence scores for downstream quality systems.`,
+    applications: ["Quality Assurance", "Manufacturing Inspection", "Automated Vision Systems"]
+  },
+  {
+    id: "17",
+    title: "Virtual RCP with MATLAB Simulink",
+    slug: "virtual-rcp-matlab-simulink",
+    category: "Embedded Systems Development",
+    description: "Virtual Rapid Control Prototyping environment using MATLAB/Simulink to design, simulate, and validate control algorithms before hardware deployment.",
+    tags: ["MATLAB", "Simulink", "Control Systems", "Prototyping"],
+    image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800&q=80",
+    githubUrl: "https://github.com/Mazidur90/Virtual-Rapid-Control-Prototyping-RCP-with-MATLAB-SIMULINK-using-Matlab",
+    details: `PROBLEM STATEMENT:
+• Testing control algorithms directly on hardware is risky and time-consuming — errors can damage actuators or require full system resets.
+
+WHERE IT IS USED:
+• Automotive ECU control algorithm development and validation.
+• Aerospace and robotics control loop prototyping.
+
+WHAT IT DOES:
+• Builds a complete virtual RCP pipeline in MATLAB/Simulink allowing control engineers to iterate on algorithms in simulation before touching hardware.
+• Supports hardware-in-the-loop (HIL) configurations for progressive validation.
+• Auto-generates deployable C code from validated Simulink models for direct microcontroller flashing.`,
+    applications: ["Automotive Control", "Aerospace Systems", "Robotics Prototyping"]
+  },
+  {
+    id: "18",
+    title: "Sensor Data Visualization PyQt5",
+    slug: "sensor-data-visualization-pyqt5",
+    category: "Cyber Physical Systems",
+    description: "Real-time sensor data visualization desktop application built with Python and PyQt5, displaying live telemetry from connected hardware.",
+    tags: ["Python", "PyQt5", "Visualization", "Sensors"],
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+    githubUrl: "https://github.com/Mazidur90/sensor-data-visualiation-with-pyqt5",
+    details: `PROBLEM STATEMENT:
+• Raw sensor output is unreadable in terminal logs — engineers need real-time graphical dashboards to monitor live hardware behaviour.
+
+WHERE IT IS USED:
+• Lab bench monitoring of microcontroller sensor arrays.
+• Industrial equipment health dashboards for on-site technicians.
+
+WHAT IT DOES:
+• Renders live sensor streams (temperature, pressure, accelerometer) in real-time plots using PyQt5 and matplotlib.
+• Supports configurable sampling rates and multi-channel display layouts.
+• Logs timestamped data to CSV for post-session analysis and trend reporting.`,
+    applications: ["Lab Instrumentation", "Industrial Monitoring", "Embedded Debugging"]
   }
 ];
