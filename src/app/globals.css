@@ -1,13 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fafafa;
-  --foreground: #121212;
-  --primary: #333333;
-  --secondary: #666666;
-  --glass: rgba(255, 255, 255, 0.6);
+  --background: #ffffff;
+  --foreground: #1d1d1f;
+  --primary: #1d1d1f;
+  --secondary: #6e6e73;
+  --glass: rgba(255, 255, 255, 0.82);
   --border: rgba(0, 0, 0, 0.08);
-  --radius: 1rem;
+  --radius: 1.25rem;
+  --section-alt: #f5f5f7;
 }
 
 @theme inline {
@@ -21,12 +22,13 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #121212;
-    --foreground: #f0f0f0;
-    --primary: #ededed;
-    --secondary: #a1a1aa;
-    --glass: rgba(18, 18, 18, 0.6);
-    --border: rgba(255, 255, 255, 0.08);
+    --background: #000000;
+    --foreground: #f5f5f7;
+    --primary: #f5f5f7;
+    --secondary: #86868b;
+    --glass: rgba(29, 29, 31, 0.82);
+    --border: rgba(255, 255, 255, 0.1);
+    --section-alt: #1d1d1f;
   }
 }
 
@@ -37,18 +39,17 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), Arial, sans-serif;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, Arial, sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
   overflow-x: hidden;
-  background-image:
-    radial-gradient(ellipse 90% 60% at 10% 15%, rgba(100, 130, 255, 0.05) 0%, transparent 65%),
-    radial-gradient(ellipse 70% 50% at 90% 85%, rgba(200, 160, 80, 0.05) 0%, transparent 65%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .glass-nav {
   background: var(--glass);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
   border-bottom: 1px solid var(--border);
 }
 
@@ -59,9 +60,9 @@ body {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow:
-    0 2px 8px rgba(0, 0, 0, 0.06),
-    0 8px 32px rgba(0, 0, 0, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    0 2px 8px rgba(0, 0, 0, 0.04),
+    0 8px 32px rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
   will-change: transform;
 }
@@ -72,7 +73,31 @@ body {
 
 .tilt-card:hover {
   box-shadow:
-    0 16px 48px rgba(0, 0, 0, 0.18),
-    0 4px 12px rgba(0, 0, 0, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    0 20px 60px rgba(0, 0, 0, 0.14),
+    0 4px 16px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.section-alt {
+  background: var(--section-alt);
+}
+
+/* Apple-style large headline */
+.headline-xl {
+  font-size: clamp(2.8rem, 7vw, 6rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.headline-lg {
+  font-size: clamp(2rem, 4.5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.015em;
+}
+
+/* Smooth section transitions */
+section {
+  transition: background 0.3s ease;
 }

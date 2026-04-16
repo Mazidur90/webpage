@@ -20,56 +20,56 @@ export default function Navbar() {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className="glass-nav fixed top-0 w-full z-50 px-4 py-4 md:px-8"
+      className="glass-nav fixed top-0 w-full z-50 px-6 py-2 md:px-10 flex flex-col gap-1"
     >
-      <div className="mx-auto flex w-full max-w-7xl flex-col gap-4">
-        <div className="flex items-center justify-between gap-4">
-          <ul className="hidden md:flex space-x-6 font-medium flex-1">
-            {navItems.map((item) => (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  className="hover:text-secondary transition-colors"
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-4">
 
-          <Link href="/" className="flex-shrink-0">
-            <EICMonogram size={68} />
-          </Link>
+        {/* Logo */}
+        <Link href="/" className="flex-shrink-0">
+          <EICMonogram size={60} />
+        </Link>
 
-          <div className="flex space-x-4 md:space-x-5 items-center flex-1 justify-end">
-            <Link href="https://github.com/Mazidur90" target="_blank">
-              <FaGithub className="w-5 h-5 hover:text-secondary transition-colors" />
-            </Link>
-            <Link
-              href="https://www.linkedin.com/in/mazidur-rahman-85661422a/"
-              target="_blank"
-            >
-              <FaLinkedin className="w-5 h-5 hover:text-secondary transition-colors" />
-            </Link>
-            <Link href="mailto:carringtonreal@gmail.com">
-              <Mail className="w-5 h-5 hover:text-secondary transition-colors" />
-            </Link>
-          </div>
-        </div>
-
-        <ul className="flex md:hidden items-center justify-between gap-2 overflow-x-auto pb-1 text-sm font-medium">
+        {/* Desktop nav — centered */}
+        <ul className="hidden lg:flex items-center gap-1 text-sm font-medium">
           {navItems.map((item) => (
-            <li key={item.href} className="shrink-0">
+            <li key={item.href}>
               <Link
                 href={item.href}
-                className="block rounded-full border border-border px-3 py-1.5 hover:text-secondary transition-colors"
+                className="px-3 py-1.5 rounded-full hover:bg-foreground/8 transition-colors text-secondary hover:text-foreground"
               >
                 {item.label}
               </Link>
             </li>
           ))}
         </ul>
+
+        {/* Icons + mobile nav */}
+        <div className="flex items-center gap-3">
+          <Link href="https://github.com/Mazidur90" target="_blank" className="text-secondary hover:text-foreground transition-colors">
+            <FaGithub className="w-5 h-5" />
+          </Link>
+          <Link href="https://www.linkedin.com/in/mazidur-rahman-85661422a/" target="_blank" className="text-secondary hover:text-foreground transition-colors">
+            <FaLinkedin className="w-5 h-5" />
+          </Link>
+          <Link href="mailto:carringtonreal@gmail.com" className="text-secondary hover:text-foreground transition-colors">
+            <Mail className="w-5 h-5" />
+          </Link>
+        </div>
       </div>
+
+      {/* Mobile nav row */}
+      <ul className="flex lg:hidden items-center gap-1.5 overflow-x-auto pb-1 text-xs font-medium max-w-full">
+        {navItems.map((item) => (
+          <li key={item.href} className="shrink-0">
+            <Link
+              href={item.href}
+              className="block rounded-full border border-border px-3 py-1.5 text-secondary hover:text-foreground transition-colors"
+            >
+              {item.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
     </motion.nav>
   );
 }
