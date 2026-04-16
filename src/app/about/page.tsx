@@ -127,40 +127,22 @@ export default function AboutPage() {
       </section>
 
       {/* ── RESUME ── */}
-      <section className="py-24 px-6 md:px-12">
-        <div className="max-w-5xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="glass-card rounded-3xl p-10 md:p-14 flex flex-col md:flex-row items-center gap-10"
+      <section className="py-16 px-6 md:px-12 flex justify-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <Link
+            href="/cv"
+            target="_blank"
+            className="flex items-center gap-3 bg-foreground text-background px-10 py-4 rounded-full font-semibold text-sm hover:opacity-85 transition-opacity"
           >
-            <div className="flex-1">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 rounded-2xl bg-foreground flex items-center justify-center">
-                  <FileText className="w-6 h-6 text-background" />
-                </div>
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-secondary">Curriculum Vitae</p>
-              </div>
-              <h2 className="headline-lg mb-4">Download Resume</h2>
-              <p className="text-secondary text-lg leading-relaxed" style={{ fontWeight: 300 }}>
-                Full CV covering embedded systems, industrial automation, robotics, and software engineering experience.
-              </p>
-            </div>
-            <div className="flex flex-col items-center gap-4 shrink-0">
-              <Link
-                href="/cv"
-                target="_blank"
-                className="flex items-center gap-3 bg-foreground text-background px-8 py-4 rounded-full font-semibold text-sm hover:opacity-85 transition-opacity"
-              >
-                <FileText className="w-4 h-4" />
-                View CV
-              </Link>
-              <p className="text-xs text-secondary">Opens full CV · Print to PDF</p>
-            </div>
-          </motion.div>
-        </div>
+            <FileText className="w-4 h-4" />
+            Resume
+          </Link>
+        </motion.div>
       </section>
 
       {/* ── CTA ── */}
