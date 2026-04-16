@@ -1,4 +1,4 @@
-export type Category = "Embedded Systems Development" | "AI and Software Automation" | "Cyber Physical Systems";
+export type Category = "Embedded Systems Development" | "AI and Software Automation" | "Cyber Physical Systems" | "Hardware Programming & Automation";
 
 export type Project = {
   id: string;
@@ -19,7 +19,7 @@ export const projects: Project[] = [
     id: "1",
     title: "Path Planning with UR Robots",
     slug: "ur-robot-path-planning",
-    category: "Cyber Physical Systems",
+    category: "Hardware Programming & Automation",
     description: "Complete automation for defect detection of tiles using a UR UE05 robot, programmed in Python with rtde controller and C++ for point cloud generation.",
     tags: ["Python", "C++", "Robotics", "Automation"],
     image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80",
@@ -107,7 +107,7 @@ WHAT IT DOES:
     id: "5",
     title: "IoT Dashboard Integration",
     slug: "iot-integration-webapp",
-    category: "Cyber Physical Systems",
+    category: "Hardware Programming & Automation",
     description: "System to integrate generic IoT modules with a standard functional dashboard web application.",
     tags: ["Python", "IoT", "Web App"],
     image: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=800&q=80",
@@ -129,7 +129,7 @@ WHAT IT DOES:
     id: "6",
     title: "MQTT Internal File Sharing",
     slug: "mqtt-file-sharing",
-    category: "Cyber Physical Systems",
+    category: "Hardware Programming & Automation",
     description: "A robust server connection utilizing MQTT protocols for lightning-fast internal file sharing and live production simulation.",
     tags: ["C#", "MQTT", "Networking", "Protocol"],
     image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&q=80",
@@ -151,7 +151,7 @@ WHAT IT DOES:
     id: "7",
     title: "CNC Stepper Motor EEPROM",
     slug: "cnc-stepper-motor",
-    category: "Embedded Systems Development",
+    category: "Hardware Programming & Automation",
     description: "A low-level C++ motor controller utilizing robust EEPROM operations for state persistence across power cycles.",
     tags: ["C++", "Embedded Systems", "Hardware", "EEPROM"],
     image: "https://images.unsplash.com/photo-1563770660941-20978e870e26?w=800&q=80",

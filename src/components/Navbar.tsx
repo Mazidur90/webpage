@@ -8,6 +8,8 @@ const navItems = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/projects", label: "Projects" },
+  { href: "/matlab-polyworks", label: "MATLAB & Polyworks" },
+  { href: "/hardware-automation", label: "Hardware" },
   { href: "/articles", label: "Articles" },
   { href: "/contact", label: "Contact" },
 ];

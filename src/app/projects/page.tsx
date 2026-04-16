@@ -5,9 +5,10 @@ import { motion } from "framer-motion";
 
 export default function ProjectsPage() {
   const categories: Category[] = [
+    "Hardware Programming & Automation",
     "Embedded Systems Development",
     "AI and Software Automation",
-    "Cyber Physical Systems"
+    "Cyber Physical Systems",
   ];
 
   return (
