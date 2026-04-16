@@ -1,8 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Printer, ArrowLeft, Github, Mail } from "lucide-react";
-import { FaLinkedin } from "react-icons/fa";
+import { Printer, ArrowLeft, Mail } from "lucide-react";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const experience = [
   {
@@ -116,7 +116,7 @@ export default function CVPage() {
                 <Mail className="w-3.5 h-3.5" /> carringtonreal@gmail.com
               </a>
               <a href="https://github.com/Mazidur90" target="_blank" className="flex items-center gap-1.5 hover:text-foreground transition-colors">
-                <Github className="w-3.5 h-3.5" /> github.com/Mazidur90
+                <FaGithub className="w-3.5 h-3.5" /> github.com/Mazidur90
               </a>
               <a href="https://www.linkedin.com/in/mazidur-rahman-85661422a/" target="_blank" className="flex items-center gap-1.5 hover:text-foreground transition-colors">
                 <FaLinkedin className="w-3.5 h-3.5" /> linkedin.com/in/mazidur-rahman
