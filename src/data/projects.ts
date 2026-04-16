@@ -22,7 +22,7 @@ export const projects: Project[] = [
     category: "Cyber Physical Systems",
     description: "Complete automation for defect detection of tiles using a UR UE05 robot, programmed in Python with rtde controller and C++ for point cloud generation.",
     tags: ["Python", "C++", "Robotics", "Automation"],
-    image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80",
     githubUrl: "https://github.com/Mazidur90/PathPlannig-with-UR-Rpobots-and-Automation-with-Scanner-for-defect-detection",
     details: `PROBLEM STATEMENT:
 • Manual tile inspection is too slow and error-prone for modern manufacturing timelines. A physical robotic mechanism combined with software processing was needed.
@@ -44,7 +44,7 @@ WHAT IT DOES:
     category: "AI and Software Automation",
     description: "Pothole segmentation system for self-driving cars to detect road hazards and enable collaborative mapping.",
     tags: ["Jupyter", "Computer Vision", "Self-Driving", "AI"],
-    image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
     githubUrl: "https://github.com/Mazidur90/pot_hole_segmentation",
     details: `PROBLEM STATEMENT:
 • Self-driving frameworks struggle to identify road irregularities like potholes seamlessly due to unoptimized image segmentation models.
@@ -66,7 +66,7 @@ WHAT IT DOES:
     category: "AI and Software Automation",
     description: "Algorithm for internal C# and C++ threads to avoid multi-call API overlap delays in fast-paced DevOps environments.",
     tags: ["C#", "C++", "DevOps", "Multithreading"],
-    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80",
     githubUrl: "https://github.com/Mazidur90/Bugtracker",
     details: `PROBLEM STATEMENT:
 • Multi-call APIs in intensive DevOps environments often suffer from severe overlap delays, crashing internal software pipelines completely.
@@ -88,7 +88,7 @@ WHAT IT DOES:
     category: "AI and Software Automation",
     description: "An object segmentation model dedicated to detecting cancer and tumor cells from distinct medical imagery.",
     tags: ["Jupyter", "Medical Imaging", "AI", "Segmentation"],
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba9f520?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=800&q=80",
     githubUrl: "https://github.com/Mazidur90/Object_segmentation_with-simple-for-cancer-abd-tumar-cell-detection",
     details: `PROBLEM STATEMENT:
 • Manual pathological reviews of tumor cell imagery are extremely tedious and subjective, requiring a reliable automated software baseline.
@@ -110,7 +110,7 @@ WHAT IT DOES:
     category: "Cyber Physical Systems",
     description: "System to integrate generic IoT modules with a standard functional dashboard web application.",
     tags: ["Python", "IoT", "Web App"],
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=800&q=80",
     githubUrl: "https://github.com/Mazidur90/IOt-intigration-with-webapp",
     details: `PROBLEM STATEMENT:
 • Hardware microcontrollers frequently lack a unified interface for non-technical users to review physical environment telemetry interactively.
@@ -132,7 +132,7 @@ WHAT IT DOES:
     category: "Cyber Physical Systems",
     description: "A robust server connection utilizing MQTT protocols for lightning-fast internal file sharing and live production simulation.",
     tags: ["C#", "MQTT", "Networking", "Protocol"],
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&q=80",
     githubUrl: "https://github.com/Mazidur90/MQtt-Protocol-for-internal-file-sharing",
     details: `PROBLEM STATEMENT:
 • Traditional HTTP file sharing processes are excessively heavy and slow down mission-critical physical production simulations executing on local servers.
@@ -154,7 +154,7 @@ WHAT IT DOES:
     category: "Embedded Systems Development",
     description: "A low-level C++ motor controller utilizing robust EEPROM operations for state persistence across power cycles.",
     tags: ["C++", "Embedded Systems", "Hardware", "EEPROM"],
-    image: "https://images.unsplash.com/photo-1580983546522-8374a2b904ae?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1563770660941-20978e870e26?w=800&q=80",
     githubUrl: "https://github.com/Mazidur90/CNC_Steppermotor",
     details: `PROBLEM STATEMENT:
 • Traditional CNC stepper motors lose internal coordinate states aggressively during arbitrary power cycling, causing major calibration failures.
@@ -176,7 +176,7 @@ WHAT IT DOES:
     category: "Embedded Systems Development",
     description: "Design and performance evaluation of virtual PID controllers for DC motors using Matlab constraints.",
     tags: ["Matlab", "Control Systems", "PID", "Engineering"],
-    image: "https://images.unsplash.com/photo-1537498425277-c273d32ef74c?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=800&q=80",
     githubUrl: "https://github.com/Mazidur90/Design-and-performance-evaluation-of-PID-control-using-Matlab",
     details: `PROBLEM STATEMENT:
 • Finding the optimal stabilization metrics for real-world DC motors is complex inherently; hardware controllers commonly over-correct leading to dangerous oscillatory states.
@@ -198,7 +198,7 @@ WHAT IT DOES:
     category: "Cyber Physical Systems",
     description: "Deep aggregation, analysis and visualization framework for Industrial IoT telemetry.",
     tags: ["Python", "IIoT", "Data Science", "Analytics"],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&q=80",
     githubUrl: "https://github.com/Mazidur90/Data-analysis-for-IIOT",
     details: `PROBLEM STATEMENT:
 • Massive raw data streams produced by physical industrial sensors (IIoT) are completely unreadable out of the box, obscuring immediate systemic errors.
@@ -220,7 +220,7 @@ WHAT IT DOES:
     category: "AI and Software Automation",
     description: "Applying Google's MediaPipe for detailed spatial analysis mapped against raw LiDAR point clouds.",
     tags: ["Python", "MediaPipe", "LiDAR", "Vision"],
-    image: "https://images.unsplash.com/photo-1620712948633-91eeeb73a5bc?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?w=800&q=80",
     githubUrl: "https://github.com/Mazidur90/Colour_analysi_with_mediaPipe_for_Lidar",
     details: `PROBLEM STATEMENT:
 • Pure point cloud topologies gathered from physical LiDAR lack color-context definitions, severely limiting structural image recognition reliability contextually.
@@ -242,7 +242,7 @@ WHAT IT DOES:
     category: "AI and Software Automation",
     description: "Real-time AI recognition algorithm capable of filtering active objects within dense traffic intersections.",
     tags: ["Jupyter", "AI", "Traffic Systems", "Detection"],
-    image: "https://images.unsplash.com/photo-1563606975258-c0ad9ffaa7ce?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?w=800&q=80",
     githubUrl: "https://github.com/Mazidur90/Objects_in_traffic_signal_detection",
     details: `PROBLEM STATEMENT:
 • Existing civil traffic cameras manually parse static feeds poorly; smart traffic grids distinctly require autonomous counting software immediately.
@@ -264,7 +264,7 @@ WHAT IT DOES:
     category: "AI and Software Automation",
     description: "Parametric C# software utilizing CUDA optimization for querying large-scale datasets rapidly.",
     tags: ["C#", "CUDA", "GPU Processing", "Database"],
-    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80",
     githubUrl: "https://github.com/Mazidur90/employee-management-cuda",
     details: `PROBLEM STATEMENT:
 • Centralized relational databases executing gigantic query joins over millions of legacy software employee records sequentially slow down HR architectures critically.
