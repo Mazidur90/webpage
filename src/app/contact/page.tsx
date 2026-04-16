@@ -25,14 +25,14 @@ const contactChannels = [
   {
     title: "GitHub",
     description: "Code, prototypes, experiments, and engineering work.",
-    href: "https://github.com",
+    href: "https://github.com/Mazidur90",
     action: "Visit GitHub",
     icon: FaGithub,
   },
   {
     title: "LinkedIn",
     description: "Professional background, collaboration, and network.",
-    href: "https://linkedin.com",
+    href: "https://www.linkedin.com/in/mazidur-rahman-85661422a/",
     action: "Visit LinkedIn",
     icon: FaLinkedin,
   },
@@ -40,7 +40,7 @@ const contactChannels = [
 
 export default function ContactPage() {
   return (
-    <div className="w-full flex flex-col pt-32 pb-16 px-8 min-h-[calc(100vh-80px)]">
+    <div className="w-full flex flex-col pt-40 md:pt-32 pb-16 px-4 md:px-8 min-h-[calc(100vh-80px)]">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -51,7 +51,7 @@ export default function ContactPage() {
           <p className="text-sm uppercase tracking-[0.35em] text-secondary mb-4">
             Contact
           </p>
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-6">
+          <h1 className="text-3xl md:text-5xl font-extrabold mb-6">
             Let&apos;s build something tangible
           </h1>
           <p className="text-lg text-secondary leading-relaxed">
