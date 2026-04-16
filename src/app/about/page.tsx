@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Download, FileText } from "lucide-react";
+import { ArrowRight, FileText } from "lucide-react";
 
 const skills = [
   { name: "Embedded C / C++", pct: 90 },
@@ -150,14 +150,14 @@ export default function AboutPage() {
             </div>
             <div className="flex flex-col items-center gap-4 shrink-0">
               <Link
-                href="/resume.pdf"
-                download
+                href="/cv"
+                target="_blank"
                 className="flex items-center gap-3 bg-foreground text-background px-8 py-4 rounded-full font-semibold text-sm hover:opacity-85 transition-opacity"
               >
-                <Download className="w-4 h-4" />
-                Download CV
+                <FileText className="w-4 h-4" />
+                View CV
               </Link>
-              <p className="text-xs text-secondary">PDF · Updated 2026</p>
+              <p className="text-xs text-secondary">Opens full CV · Print to PDF</p>
             </div>
           </motion.div>
         </div>
