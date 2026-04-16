@@ -119,26 +119,29 @@ export default function MatlabPolywirksPage() {
           <h2 className="text-3xl font-extrabold">MATLAB / Simulink Projects</h2>
           <div className="h-px flex-1 bg-border mt-1" />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-col gap-6">
           {matlabProjects.map((p, i) => (
             <motion.div
               key={p.title}
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, x: i % 2 === 0 ? -40 : 40 }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ delay: i * 0.08 }}
-              className="glass-card overflow-hidden flex flex-col group"
+              className="glass-card tilt-card overflow-hidden flex flex-col md:flex-row group"
+              style={{ transition: "transform 0.12s ease, box-shadow 0.12s ease" }}
             >
-              <div className="relative w-full h-44">
+              <div className="relative w-full md:w-72 lg:w-96 h-52 md:h-auto shrink-0">
                 <Image src={p.image} alt={p.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
-              <div className="p-6 flex flex-col flex-1">
-                <div className="flex justify-between items-start mb-3 gap-2">
-                  <h3 className="text-lg font-bold">{p.title}</h3>
-                  <Link href={p.github} target="_blank" className="text-secondary hover:text-foreground shrink-0">
-                    <FaGithub className="w-5 h-5" />
-                  </Link>
+              <div className="p-6 flex flex-col justify-between flex-1">
+                <div>
+                  <div className="flex justify-between items-start mb-3 gap-2">
+                    <h3 className="text-xl font-bold">{p.title}</h3>
+                    <Link href={p.github} target="_blank" className="text-secondary hover:text-foreground shrink-0">
+                      <FaGithub className="w-5 h-5" />
+                    </Link>
+                  </div>
+                  <p className="text-secondary leading-relaxed mb-4">{p.description}</p>
                 </div>
-                <p className="text-secondary text-sm leading-relaxed flex-1 mb-4">{p.description}</p>
                 <div className="flex flex-wrap gap-2 pt-4 border-t border-border">
                   {p.tags.map(t => (
                     <span key={t} className="text-xs font-semibold px-2 py-1 bg-foreground text-background/90 rounded-md">{t}</span>

@@ -5,17 +5,37 @@ import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { useRef } from "react";
 
 export default function ProjectCard({ project, index }: { project: Project; index: number }) {
+  const cardRef = useRef<HTMLDivElement>(null);
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!cardRef.current) return;
+    const rect = cardRef.current.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width - 0.5;
+    const y = (e.clientY - rect.top) / rect.height - 0.5;
+    cardRef.current.style.transform = `perspective(900px) rotateX(${-y * 9}deg) rotateY(${x * 9}deg) translateZ(12px)`;
+  };
+
+  const handleMouseLeave = () => {
+    if (!cardRef.current) return;
+    cardRef.current.style.transform = "perspective(900px) rotateX(0deg) rotateY(0deg) translateZ(0px)";
+  };
+
   return (
     <motion.div
+      ref={cardRef}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="glass-card overflow-hidden flex flex-col group relative"
+      className="glass-card tilt-card overflow-hidden flex flex-col group relative cursor-pointer"
+      style={{ transition: "transform 0.12s ease, box-shadow 0.12s ease" }}
     >
       <div className="relative w-full h-48">
-        <Image 
+        <Image
           src={project.image}
           alt={project.title}
           fill
@@ -35,14 +55,12 @@ export default function ProjectCard({ project, index }: { project: Project; inde
           <div className="flex gap-2 shrink-0 text-secondary">
             {project.githubUrl && (
               <Link href={project.githubUrl} target="_blank" className="hover:text-foreground">
-                 <FaGithub className="w-5 h-5" />
+                <FaGithub className="w-5 h-5" />
               </Link>
             )}
           </div>
         </div>
-        <p className="text-secondary text-sm mb-6 flex-1 line-clamp-3">
-          {project.description}
-        </p>
+        <p className="text-secondary text-sm mb-6 flex-1 line-clamp-3">{project.description}</p>
         <div className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-border">
           {project.tags.map(tag => (
             <span key={tag} className="text-xs font-semibold px-2 py-1 bg-foreground text-background/90 rounded-md">

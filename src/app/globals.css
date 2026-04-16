@@ -40,6 +40,9 @@ body {
   font-family: var(--font-sans), Arial, sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
   overflow-x: hidden;
+  background-image:
+    radial-gradient(ellipse 90% 60% at 10% 15%, rgba(100, 130, 255, 0.05) 0%, transparent 65%),
+    radial-gradient(ellipse 70% 50% at 90% 85%, rgba(200, 160, 80, 0.05) 0%, transparent 65%);
 }
 
 .glass-nav {
@@ -55,4 +58,21 @@ body {
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border);
   border-radius: var(--radius);
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.06),
+    0 8px 32px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  will-change: transform;
+}
+
+.tilt-card {
+  transform-style: preserve-3d;
+}
+
+.tilt-card:hover {
+  box-shadow:
+    0 16px 48px rgba(0, 0, 0, 0.18),
+    0 4px 12px rgba(0, 0, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }

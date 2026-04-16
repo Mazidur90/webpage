@@ -38,7 +38,7 @@ export default function Navbar() {
           </ul>
 
           <Link href="/" className="flex-shrink-0">
-            <EICMonogram size={40} />
+            <EICMonogram size={68} />
           </Link>
 
           <div className="flex space-x-4 md:space-x-5 items-center flex-1 justify-end">
