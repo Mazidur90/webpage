@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Modern Portfolio",
-  description: "A professional portfolio showcasing engineering projects, code, and design.",
+  title: "Swift",
+  description: "Mazidur Rahman — Embedded Systems, AI, Robotics & Industrial Automation Engineer.",
 };
 
 export default function RootLayout({

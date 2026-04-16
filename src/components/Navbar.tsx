@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Mail } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
+import EICMonogram from "@/components/EICMonogram";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -36,11 +37,8 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <Link
-            href="/"
-            className="font-bold text-xl bg-foreground text-background h-10 w-10 flex items-center justify-center rounded-full flex-shrink-0 cursor-pointer"
-          >
-            CB
+          <Link href="/" className="flex-shrink-0">
+            <EICMonogram size={40} />
           </Link>
 
           <div className="flex space-x-4 md:space-x-5 items-center flex-1 justify-end">
