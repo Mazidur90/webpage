@@ -1,7 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Printer, ArrowLeft, Github, Linkedin, Mail, MapPin } from "lucide-react";
+import { Printer, ArrowLeft, Github, Mail } from "lucide-react";
+import { FaLinkedin } from "react-icons/fa";
 
 const experience = [
   {
@@ -118,7 +119,7 @@ export default function CVPage() {
                 <Github className="w-3.5 h-3.5" /> github.com/Mazidur90
               </a>
               <a href="https://www.linkedin.com/in/mazidur-rahman-85661422a/" target="_blank" className="flex items-center gap-1.5 hover:text-foreground transition-colors">
-                <Linkedin className="w-3.5 h-3.5" /> linkedin.com/in/mazidur-rahman
+                <FaLinkedin className="w-3.5 h-3.5" /> linkedin.com/in/mazidur-rahman
               </a>
             </div>
           </div>
