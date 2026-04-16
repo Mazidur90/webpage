@@ -98,7 +98,7 @@ export default function HeroSection() {
                 src="/beach-portrait.jpg"
                 alt="Mazidur Rahman"
                 fill
-                className="object-cover object-top"
+                className="object-cover object-center"
                 priority
                 onError={(e) => {
                   (e.target as HTMLImageElement).src = "https://avatars.githubusercontent.com/u/140770963?v=4";
