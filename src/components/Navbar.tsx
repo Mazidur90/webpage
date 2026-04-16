@@ -25,7 +25,7 @@ export default function Navbar() {
       <div className="flex space-x-5 items-center flex-1 justify-end">
         <Link href="https://github.com" target="_blank"><FaGithub className="w-5 h-5 hover:text-secondary transition-colors" /></Link>
         <Link href="https://linkedin.com" target="_blank"><FaLinkedin className="w-5 h-5 hover:text-secondary transition-colors" /></Link>
-        <Link href="mailto:contact@example.com"><Mail className="w-5 h-5 hover:text-secondary transition-colors" /></Link>
+        <Link href="mailto:carringtonreal@gmail.com"><Mail className="w-5 h-5 hover:text-secondary transition-colors" /></Link>
       </div>
     </motion.nav>
   );

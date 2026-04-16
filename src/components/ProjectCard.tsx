@@ -3,7 +3,7 @@ import { Project } from "@/data/projects";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
-import { ExternalLink, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function ProjectCard({ project, index }: { project: Project; index: number }) {

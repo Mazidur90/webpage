@@ -12,7 +12,7 @@ export default function AboutPage() {
         <div className="w-full md:w-1/2 flex flex-col gap-6">
           <h1 className="text-4xl md:text-5xl font-extrabold">About Me</h1>
           <p className="text-lg text-secondary leading-relaxed">
-            I am a passionate software engineer with a deep interest in industrial automation, digital twins, and full-stack development. Throughout my career, I've focused on building robust systems that bridge the gap between hardware functionality and software architecture.
+            I am a passionate software engineer with a deep interest in industrial automation, digital twins, and full-stack development. Throughout my career, I&apos;ve focused on building robust systems that bridge the gap between hardware functionality and software architecture.
           </p>
           <p className="text-lg text-secondary leading-relaxed">
             With hands-on experience in resolving complex pipeline issues, from OPC-UA to lower-level C++ motor controllers, my approach emphasizes reliability and efficiency. I continuously explore tools like Next.js, Framer Motion, and AI frameworks (e.g. Hermes) to bring out the best in both backend stability and frontend aesthetics.
