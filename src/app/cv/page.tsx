@@ -7,10 +7,24 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const experience = [
   {
+    company: "Dassault Systèmes",
+    role: "SDK Developer — Multiphysics",
+    location: "Remote / Germany",
+    period: "09/2025 – 01/2026",
+    bullets: [
+      "Developed SDK modules for multiphysics simulation coupling within Dassault Systèmes' SIMULIA ecosystem.",
+      "Integrated NVIDIA PhysX (pHYx) rigid-body and fluid dynamics solvers into the SDK pipeline for real-time physics feedback.",
+      "Built Node.js middleware services to expose simulation APIs and stream live physics state data to external clients.",
+      "Implemented Unity-based visualisation layer consuming SDK telemetry for interactive 3D multiphysics inspection.",
+      "Designed event-driven architecture bridging Node.js backend with Unity frontend via WebSocket for sub-100 ms latency.",
+      "Authored SDK documentation and example projects covering pHYx, Node.js, and Unity integration workflows.",
+    ],
+  },
+  {
     company: "Fraunhofer IWS",
     role: "Software Developer (Werkstudent)",
     location: "Bremen, Germany",
-    period: "02/2025 – Present",
+    period: "02/2025 – 08/2025",
     bullets: [
       "Implemented advanced seismic modelling pipelines with Python and Madagascar RSF for 3D wavefield simulations, FD modelling and automatic generation of acquisition geometries.",
       "Built desktop tools in Python (PyQt) and C++ for RSF/SEGY conversion, model visualisation and batch data processing.",

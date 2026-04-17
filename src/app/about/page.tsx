@@ -4,6 +4,55 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, FileText } from "lucide-react";
 
+const experience = [
+  {
+    company: "Dassault Systèmes",
+    role: "SDK Developer — Multiphysics",
+    period: "09/2025 – 01/2026",
+    tags: ["PhysX (pHYx)", "Node.js", "Unity", "WebSocket", "SIMULIA SDK"],
+    bullets: [
+      "Built SDK modules for multiphysics simulation coupling within SIMULIA ecosystem.",
+      "Integrated NVIDIA PhysX for real-time rigid-body and fluid dynamics feedback.",
+      "Node.js middleware services exposing simulation APIs with sub-100 ms WebSocket streaming.",
+      "Unity 3D visualisation layer consuming live SDK telemetry for interactive physics inspection.",
+    ],
+  },
+  {
+    company: "Fraunhofer IWS",
+    role: "Software Developer (Werkstudent)",
+    period: "02/2025 – 08/2025",
+    tags: ["Python", "C++", "Node.js", "PyQt", "RSF/SEGY", "HPC"],
+    bullets: [
+      "Built seismic modelling pipelines with Python & Madagascar RSF for 3D wavefield simulations.",
+      "Desktop tools in PyQt and C++ for RSF/SEGY conversion, model visualisation, and batch processing.",
+      "FMPI-based co-simulations coupling Python engines with external computation models.",
+      "Node.js REST APIs syncing scientific Python backends across distributed HPC systems.",
+    ],
+  },
+  {
+    company: "SHINING 3D Automation",
+    role: "Software Developer Intern",
+    period: "05/2024 – 01/2025",
+    tags: ["React", "C#", ".NET 8.1", "Azure", "MongoDB"],
+    bullets: [
+      "Client software via proprietary SDK using React and C# .NET 8.1.",
+      "Azure pipeline with MongoDB and SATA to reduce production downtime.",
+      "Front-end for in-house C++ software managing host and server administration.",
+    ],
+  },
+  {
+    company: "ZF Friedrichshafen AG",
+    role: "Software Developer (Werkstudent)",
+    period: "08/2023 – 04/2024",
+    tags: ["Python", "Asp.NET", "Angular", "Power BI", "JIRA"],
+    bullets: [
+      "Migrated IMS Client database to EDA Matplus via Asp.NET and Angular.",
+      "Extended Python algorithm for API upload and automatic JSON file generation.",
+      "Power BI dashboard for magnet list pricing with material properties.",
+    ],
+  },
+];
+
 const skills = [
   { name: "Embedded C / C++", pct: 90 },
   { name: "Python Automation", pct: 92 },
@@ -120,6 +169,52 @@ export default function AboutPage() {
                     transition={{ delay: 0.3 + i * 0.07, duration: 1, ease: "easeOut" }}
                   />
                 </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── EXPERIENCE ── */}
+      <section className="py-24 px-6 md:px-12">
+        <div className="max-w-5xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+          >
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-secondary mb-4">Career</p>
+            <h2 className="headline-lg mb-14">Experience</h2>
+          </motion.div>
+          <div className="flex flex-col gap-10">
+            {experience.map((e, i) => (
+              <motion.div
+                key={e.company}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.08, duration: 0.6 }}
+                className="flex flex-col md:flex-row gap-6 pb-10 border-b border-border last:border-0 last:pb-0"
+              >
+                <div className="md:w-48 shrink-0">
+                  <p className="text-xs font-semibold text-secondary">{e.period}</p>
+                  <p className="font-bold mt-1">{e.company}</p>
+                  <p className="text-sm text-secondary mt-0.5">{e.role}</p>
+                  <div className="flex flex-wrap gap-1.5 mt-3">
+                    {e.tags.map((t) => (
+                      <span key={t} className="text-xs px-2 py-0.5 rounded-md border border-border text-secondary font-medium">{t}</span>
+                    ))}
+                  </div>
+                </div>
+                <ul className="flex flex-col gap-2 flex-1">
+                  {e.bullets.map((b, j) => (
+                    <li key={j} className="text-sm text-secondary leading-relaxed flex gap-2">
+                      <span className="mt-2 w-1 h-1 rounded-full bg-secondary shrink-0" />
+                      {b}
+                    </li>
+                  ))}
+                </ul>
               </motion.div>
             ))}
           </div>
