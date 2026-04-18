@@ -95,7 +95,7 @@ export default function HeroSection() {
             {/* Main photo frame */}
             <div className="relative w-[340px] md:w-[400px] lg:w-[460px] aspect-[3/4] rounded-[2.5rem] overflow-hidden shadow-[0_40px_80px_rgba(0,0,0,0.18)]">
               <Image
-                src="/webpage/beach-portrait.jpg"
+                src="/webpage/hero_portrait.png"
                 alt="Mazidur Rahman"
                 fill
                 className="object-cover object-center"
