@@ -254,7 +254,7 @@ export default function CVPage() {
           <div className="flex flex-col items-center text-center gap-4 border-b border-border pb-8">
             <div className="w-24 h-24 rounded-full overflow-hidden shadow-lg">
               <Image
-                src="/beach-portrait.jpg"
+                src="/webpage/beach-portrait.jpg"
                 alt="Mazidur Rahman"
                 width={96}
                 height={96}

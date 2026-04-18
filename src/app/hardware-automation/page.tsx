@@ -196,7 +196,7 @@ export default function HardwareAutomationPage() {
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }} className="glass-card rounded-3xl p-10 flex flex-col md:flex-row items-center justify-between gap-6">
         <div>
           <h3 className="text-2xl font-extrabold mb-2">Building something physical?</h3>
-          <p className="text-secondary">Robot automation, embedded controllers, industrial IoT — let's engineer it.</p>
+          <p className="text-secondary">Robot automation, embedded controllers, industrial IoT — let&apos;s engineer it.</p>
         </div>
         <Link href="/contact" className="bg-foreground text-background px-8 py-3.5 rounded-xl font-semibold flex items-center gap-2 hover:opacity-90 transition-opacity shrink-0">
           Get in Touch <ExternalLink className="w-4 h-4" />
