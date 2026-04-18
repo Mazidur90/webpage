@@ -80,7 +80,7 @@ export default function AboutPage() {
             <div className="relative">
               <div className="w-[300px] md:w-[380px] lg:w-[440px] aspect-[3/4] rounded-[2.5rem] overflow-hidden shadow-[0_40px_100px_rgba(0,0,0,0.2)]">
                 <Image
-                  src="/webpage/beach-portrait.jpg"
+                  src="/webpage/developer-profile-office.png"
                   alt="Mazidur Rahman"
                   fill
                   className="object-cover object-center"
